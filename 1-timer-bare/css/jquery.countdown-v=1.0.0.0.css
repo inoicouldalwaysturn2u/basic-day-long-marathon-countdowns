@@ -1,0 +1,232 @@
+/* Initial, Utilities */
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+body {
+ margin-top:  0px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/* 
+Initial
+ */
+ 
+div#content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px;
+	
+	/*background: #4F54BC;*/
+	background: rgba( 79, 84, 188, 0.70 );	
+	color: white;
+	font: normal 12px 'Open Sans', sans-serif;
+}
+
+p.days_text, p.hours_text, p.minutes_text, p.seconds_text {
+	margin-top: 5px;
+	margin-bottom: 1px;
+}
+
+
+/* Spacing and borders/lines */
+
+div.top-one {
+	width:  27.5%;	
+	margin: 0px auto;
+	
+	margin-top: 10px;
+	margin-bottom:  15px;
+	border-top: 3px dashed #6495ED;
+}
+
+div.bottom-one {
+	width: 20%;	
+	margin: 0px auto;
+	
+	margin-top: 25px;
+	margin-bottom:  25px;
+	border-top: 8px dashed #6495ED;
+}
+
+div.mid-one {
+	width:  1%;	
+	margin: 40px;
+}
+
+div.big-mid-one {
+	width:  1%;	
+	margin: 75px;
+}
+
+
+div.top-title-one {
+	width:  1%;	
+	margin: 15px;
+}
+
+/* [Text] Headers */
+
+h1, h2, h3, h4, h5, h6 {
+	top: 2.5em;
+    color: #FFF;
+    opacity: .5;
+	font-family: Helvetica,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+    width: 100%;
+    text-align: center;
+	
+	font-weight: 550;
+	line-height: 1.2;
+	letter-spacing: .075em;
+
+	margin-block-end: 2px;
+	margin-top: 3px;
+}
+
+h1 {	
+    font-size: 45px;
+    font-weight: 700;
+		
+    letter-spacing: .125em;
+    line-height: 1.4;
+	
+	text-transform: uppercase;
+	
+	margin-block-end: 30px;
+		
+	margin-bottom: 5px;
+}
+
+h2 {	
+    font-size: 35px;    
+	font-style:  oblique;
+}
+
+h3 {
+    font-size: 44px;
+	
+	margin-block-end: 7px;
+	margin-top: 10px;
+}
+
+h4 {	
+    font-size: 38px;
+	
+	margin-block-end: 5px;
+	margin-top: 5px;
+}
+
+h6 {
+    font-size: 26px;
+	font-weight: 700;  	
+	
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 24px
+	    
+    text-transform: capitalize;	
+}
+
+
+/* Default ul, li, and children */
+
+div.primary-timers ul, div.secondary-timers ul {
+	list-style: none;
+	margin: 40px 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	font-family: Helvetica,Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif;
+}
+
+div.primary-timers ul li, div.secondary-timers ul li {
+	display: inline-block;
+}
+
+div.primary-timers ul li span, div.secondary-timers ul li span {
+	font-weight: bold;
+}
+div.primary-timers ul li.seperator, div.secondary-timers ul li.seperator {
+	vertical-align: top;
+}
+
+div.primary-timers ul li p, div.secondary-timers ul li p {
+	color: rgba(255,255,255,.7);
+	text-transform: uppercase;
+	
+	letter-spacing: .1em;
+}
+
+/* Main timers */
+
+div.primary-timers ul li span {
+	font-size: 60px;
+	line-height: 60px;
+}
+div.primary-timers ul li.seperator {
+	font-size: 55px;
+	line-height: 50px;
+}
+div.primary-timers ul li p {
+	font-size: 50px;
+}
+
+div.primary-timers h3 {
+	margin-block-end: 10px;
+}
+
+
+/* Smaller timers */
+
+div.secondary-timers ul li span {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 40px;
+
+}
+div.secondary-timers ul li.seperator {
+	font-size: 40px;	
+	line-height: 30px;
+}
+div.secondary-timers ul li p {
+	font-size: 40px;
+}
+
+div.secondary-timers h4 {
+	margin-block-end: 10px;
+}
+
+
+/* Extras */
+div.centered {	
+	text-align: center;
+	margin: 0px auto;
+	font-size: 24px;
+}
+
+div.centered ul {
+	margin-top: 5px;
+	list-style: none;
+}
+
+div.centered ul li {
+	margin: 8px;
+}
+

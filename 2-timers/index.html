@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoomers.xyz Work Marathons</title>
+
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link type="text/css" href="css/jquerysctipttop.css" rel="stylesheet">
+  <link type="text/css" href="css/jquery.countdown-v=1.0.0.0.css" rel="stylesheet">
+</head>
+
+<body>		  
+  <script type="text/javascript">
+  	var curr = new Date();
+	var day = curr.getDate();
+	var month = curr.getMonth() + 1;
+  </script>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  
+<script type="text/javascript">
+function refreshAt(hours, minutes) {
+    const now = new Date();
+    const then = new Date();
+    const dayUTC = new Date();
+
+    if ( now.getUTCHours() > hours ||
+       ( now.getUTCHours() == hours && now.getUTCMinutes() > minutes ) ) {
+		then.setUTCDate( now.getUTCDate() + 1 );
+    }
+
+    then.setUTCHours(hours);
+    then.setUTCMinutes(minutes);
+
+    const timeout = (then.getTime() - now.getTime());
+    setTimeout(function() { window.location.reload(true); }, timeout);
+}
+  </script>
+
+<div id="content" class="center">
+	<h1>W🍓rk Marath🍓n</h1>
+	  <h2>TGIF. Begins 9:00 AM EST</h2>
+	  
+	  <div class="bottom-one"></div>	    
+
+  <div class="timers primary-timers">
+    <h3>Ends: 05:00 pm EST</h3>
+    <ul style="margin-top: 2.5px" id="zoomers-deux" class="timers">
+
+	    <li>
+		    <span class="days">00</span>
+		    <p class="days_text">Days</p>
+	    </li>
+	
+	    <li class="seperator">
+		    :
+	    </li>
+	
+	    <li>
+		    <span class="hours">00</span>
+		    <p class="hours_text">Hrs</p>
+	    </li>
+	
+	    <li class="seperator">
+		    :
+	    </li>
+	
+	    <li>
+		    <span class="minutes">00</span>
+		    <p class="minutes_text">Min</p>
+	    </li>
+    </ul>
+
+    <script type="text/javascript">
+    $('#zoomers-deux').countdown( {
+	    date: month + '/' + day + '/2020 17:00:00',
+	    offset: -4,
+	    day: 'Day',
+	    days: 'Days'
+	    } );
+    </script>
+		
+  </div>  
+  
+  <div class="big-mid-one"></div>
+  
+  <div class="timers secondary-timers">
+    <h4>Extra Annex: 11:00pmEST</h4>
+    <ul id="zoomers-one" style="margin-top: 5px; margin-bottom:5px" class="timers">
+
+	    <li>
+		    <span class="days">00</span>
+		    <p class="the-text days_text">Days</p>
+	    </li>
+		
+	    <li class="seperator">
+		    :
+	    </li>
+		
+	    <li>
+		    <span class="hours">00</span>
+		    <p class="the-text hours_text">Hrs</p>
+	    </li>
+		
+	    <li class="seperator">
+		    :
+	    </li>
+		
+	    <li>
+		    <span class="minutes">00</span>
+		    <p class="the-text minutes_text">Min</p>
+	    </li>
+    </ul>	
+
+    <script type="text/javascript">
+    $('#zoomers-one').countdown( {
+	    date: month + '/' + day + '/2020 23:00:00',
+	    offset: -4,
+	    day: 'Day',
+	    days: 'Days'
+	    } );
+    </script>	
+  </div>
+  
+</div>
+  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+
+	<script type="text/javascript">
+		  $.backstretch([
+      "img/social-network/1.jpg"
+    , "img/social-network/2.jpg"
+    , "img/social-network/3.png"
+	, "img/social-network/4.jpg"
+	, "img/social-network/5.jpg"
+	, "img/social-network/6.jpg"
+	, "img/social-network/7.png"
+	, "img/social-network/8.jpg"
+	, "img/social-network/9.jpg"
+	, "img/social-network/10.jpg"
+	, "img/social-network/11.jpg"
+	, "img/social-network/12.jpg"
+	
+  ], {duration: 20000, fade: 4000});
+	</script>
+	
+	<script type="text/javascript">
+		refreshAt( 9, 0 );
+	</script>
+</body>
+</html>
