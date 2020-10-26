@@ -3,39 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Zoomers.xyz Work Marathons</title>
-
-  <link rel="shortcut icon" href="img/favicon.png">
-  <link type="text/css" href="css/jquerysctipttop.css" rel="stylesheet">
-  <link type="text/css" href="css/jquery.countdown-v=1.0.0.0.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+  
+  <link type="text/css" href="../assets/css/jquerysctipttop.css" rel="stylesheet">
+  
+  <link type="text/css" href="../assets/css/base.css" rel="stylesheet">
+  <link type="text/css" href="css/base.css" rel="stylesheet">
 </head>
 
-<body>		  
-  <script type="text/javascript">
-  	var curr = new Date();
-	var day = curr.getDate();
-	var month = curr.getMonth() + 1;
-  </script>
-  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+<body>
+  <script type="text/javascript" src="../assets/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.backstretch.min.js"></script>
   
-<script type="text/javascript">
-function refreshAt(hours, minutes) {
-    const now = new Date();
-    const then = new Date();
-    const dayUTC = new Date();
-
-    if ( now.getUTCHours() > hours ||
-       ( now.getUTCHours() == hours && now.getUTCMinutes() > minutes ) ) {
-		then.setUTCDate( now.getUTCDate() + 1 );
-    }
-
-    then.setUTCHours(hours);
-    then.setUTCMinutes(minutes);
-
-    const timeout = (then.getTime() - now.getTime());
-    setTimeout(function() { window.location.reload(true); }, timeout);
-}
-  </script>
+  <script type="text/javascript" src="../assets/js/extra-z.js"></script>
 
 <div id="content" class="center">
 	<h1>W🍓rk Marath🍓n</h1>
@@ -121,30 +102,8 @@ function refreshAt(hours, minutes) {
 	    } );
     </script>	
   </div>
-  
 </div>
-  <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
 
-	<script type="text/javascript">
-		  $.backstretch([
-      "img/social-network/1.jpg"
-    , "img/social-network/2.jpg"
-    , "img/social-network/3.png"
-	, "img/social-network/4.jpg"
-	, "img/social-network/5.jpg"
-	, "img/social-network/6.jpg"
-	, "img/social-network/7.png"
-	, "img/social-network/8.jpg"
-	, "img/social-network/9.jpg"
-	, "img/social-network/10.jpg"
-	, "img/social-network/11.jpg"
-	, "img/social-network/12.jpg"
-	
-  ], {duration: 20000, fade: 4000});
-	</script>
-	
-	<script type="text/javascript">
-		refreshAt( 9, 0 );
-	</script>
 </body>
+
 </html>

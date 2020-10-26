@@ -1,6 +1,6 @@
 /* Initial, Utilities */
 
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 body {
  margin-top:  0px;
 }
@@ -33,7 +33,7 @@ div#content {
 	padding: 20px;
 	
 	/*background: #4F54BC;*/
-	background: rgba( 79, 84, 188, 0.70 );	
+	background: rgba( 79, 84, 188, 70% );	
 	color: white;
 	font: normal 12px 'Open Sans', sans-serif;
 }
